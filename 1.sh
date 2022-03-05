@@ -1,9 +1,11 @@
 #!/bin/bash
 
-if ![[ "$1" = *([0-9]) && "$2" = *([0-9]) ]]
-then 
-    echo "Please enter integer numbers.";
-fi
+case $1 in
+    ''|*[!0-9]*) echo your first input is not an integer ;exit 1 ;
+esac
+case $2 in
+    ''|*[!0-9]*) echo your second input is not an integer ;exit 1 ;
+esac
 
 sum=$(($1+$2))
  
