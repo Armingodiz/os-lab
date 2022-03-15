@@ -21,6 +21,8 @@ int segment_id;
 int root_pid;
 int current_pid;
 
+
+
 void printHistogram(int *hist){
     for (int i = 0; i < 25; i++){
         for (int j = 0; j < hist[i]; j++){
